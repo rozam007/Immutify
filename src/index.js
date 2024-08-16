@@ -1,4 +1,4 @@
-class Validate {
+class validate {
   constructor(target, validators) {
     this.target = target;
     this.validators = validators;
@@ -26,4 +26,4 @@ class Validate {
   }
 }
 
-module.exports = { Validate };
+module.exports =  validate ;
