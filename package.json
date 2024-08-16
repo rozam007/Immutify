@@ -1,13 +1,17 @@
 {
   "name": "immutify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A library about to mutate the objects with custom validations.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js"
   },
-  "keywords": ["proxy", "validation", "object"],
+  "keywords": [
+    "proxy",
+    "validation",
+    "object"
+  ],
   "author": "Rozam Tanveer",
   "license": "MIT",
   "dependencies": {
