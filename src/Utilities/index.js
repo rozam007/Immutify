@@ -10,4 +10,6 @@ const matchObjectsKeys = (obj1, obj2) => {
     
 }
 
-module.exports = {matchObjectsKeys}
+const generateErrorMessage = key => `Invalid value for ${key}`
+
+module.exports = {matchObjectsKeys, generateErrorMessage}
