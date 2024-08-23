@@ -1,3 +1,5 @@
+const { type } = require("./Helpers")
+
 const object = {
     id: 1,
     name: 'rozam',
@@ -15,3 +17,5 @@ const validators = {
 }
 
 const proxy = validate(object, validators)
+
+console.log(proxy.age = 89)

@@ -1,0 +1,21 @@
+const { matchObjectsKeys, generateErrorMessage } = require("../Utilities");
+
+const validate = async (object, validators) => {
+  await matchObjectsKeys(object, validators);
+
+  const handler = {
+    set: (target, prop, value) => {
+      if (validators[prop]) {
+        const validator = validators[prop];
+        const valid = validator.validate(value);
+        if (!valid) generateErrorMessage(prop);
+      }
+      target[prop] = value;
+      return true;
+    },
+  };
+
+  return new Proxy(object, handler);
+};
+
+module.exports = {validate};
