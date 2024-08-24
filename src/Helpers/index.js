@@ -17,16 +17,10 @@ class StringValidator extends Validator {
 }
 
 class NumberValidator extends Validator {
-    greaterThan(min) {
+    range({gT, sT}) {
         return {
-            validate: (value) => typeof value === 'number' && value > min
-        };
-    }
-
-    smallerThan(max) {
-        return {
-            validate: (value) => typeof value === 'number' && value < max
-        };
+            validate: value => typeof value === Number && value > gT && value < sT
+        }
     }
 }
 
