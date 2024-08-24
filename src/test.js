@@ -1,4 +1,5 @@
 const { type } = require("./Helpers")
+const {validate} = require("./Validations/index")
 
 const object = {
     id: 1,
@@ -11,7 +12,7 @@ const object = {
 const validators = {
     id: type(Number),
     name: type(String).length({min: 5, max:20}),
-    age: type(Number).greaterThan(18).smallerThan(75),
+    age: type(Number).range({gT: 18, sT: 85}),
     city: type(String),
     married: type(Boolean)
 }
