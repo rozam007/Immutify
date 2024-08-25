@@ -17,9 +17,9 @@ class StringValidator extends Validator {
 }
 
 class NumberValidator extends Validator {
-    range({gT, sT}) {
+    range({min, max}) {
         return {
-            validate: value => typeof value === Number && value > gT && value < sT
+            validate: value => value > min && value < max
         }
     }
 }
