@@ -6,17 +6,17 @@ const object = {
     name: 'rozam',
     age: 24,
     city: 'gujranwala',
-    marrried: false
+    married: false
 }
 
 const validators = {
     id: type(Number),
     name: type(String).length({min: 5, max:20}),
-    age: type(Number).range({gT: 18, sT: 85}),
+    age: type(Number).range({min: 18, max: 85}),
     city: type(String),
     married: type(Boolean)
 }
 
 const proxy = validate(object, validators)
 
-console.log(proxy.age = 89)
+console.log(proxy.age = 1000)
