@@ -8,6 +8,7 @@ const validate =  (object, validators) => {
       if (validators[prop]) {
         const validator = validators[prop];
         const valid = validator.validate(value);
+        console.log('valid: ', valid)
         if (!valid) generateErrorMessage(prop);
       }
       target[prop] = value;
