@@ -8,7 +8,7 @@ const object = {
     age: 24,
     city: 'gujranwala',
     married: false
-}
+} 
 
 const validators = {
     id: type(Number),

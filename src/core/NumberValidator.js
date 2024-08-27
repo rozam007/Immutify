@@ -1,8 +1,10 @@
 const {Validator} = require('./Validator');
-const { validateMinMax } = require('../Utilities');
+const { validateMinMax, validateProps } = require('../Utilities');
 
 class NumberValidator extends Validator {
-  range({ min, max }) {
+  range(props) {
+    validateProps(props)
+    const {min, max} = props;
     validateMinMax({ min, max });
     return {
       validate: (value) =>

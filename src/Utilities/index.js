@@ -17,7 +17,10 @@ const validateMinMax = ({max, min}) => {
     if (min === max) throw new Error(`min: ${min} and max: ${max} cannot be same`)
     if (min > max) throw new Error(`min: ${min} cannot be greater than max: ${max}`)
     if (max < min) throw new Error(`max: ${max} cannot be smaller than min: ${min}`)    
-    return
 }
 
-module.exports = { matchObjectsKeys, generateErrorMessage, validateMinMax };
+const validateProps = props => {
+  if (typeof props !== 'object') throw new Error(`send props in object like manner`)
+}
+
+module.exports = { matchObjectsKeys, generateErrorMessage, validateMinMax, validateProps };
