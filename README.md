@@ -26,7 +26,7 @@ Here's a step-by-step example of how to use Immutify to validate and mutate obje
 ### Step 1: Create an Object
 Define your JavaScript object:
 
-![Project Logo](Assets/schema.png)
+![Project Logo](./src/Assets/schema.png)
 
 
 ### Step 2: Import the type Function
