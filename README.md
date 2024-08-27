@@ -25,8 +25,7 @@ Here's a step-by-step example of how to use Immutify to validate and mutate obje
 
 ### Step 1: Create an Object
 Define your JavaScript object:
-
-![Schema](src/Assets/schema.png)
+![Schema](src/Assets/object.png)
 
 
 ### Step 2: Import the type Function
@@ -34,13 +33,7 @@ Import the type function from Immutify:
 import { type } from 'immutify';
 
 Create a validation schema:
-const validators = {
-    id: type(Number),
-    name: type(String).length({min: 5, max:20}),
-    age: type(Number).range({max: 85, min: 18}),
-    city: type(String),
-    married: type(Boolean)
-}
+![Schema](src/Assets/schema.png)
 
 ### Step 3: Import the validate Function
 Import the validate function from Immutify:
