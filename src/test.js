@@ -5,6 +5,7 @@ const {validate} = require("./core/Validator/ObjectValidator")
 const object = {
     id: 1,
     name: 'rozam',
+    
     age: 24,
     city: 'gujranwala',
     married: false
