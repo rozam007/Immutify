@@ -15,8 +15,7 @@ const validate =  (object, validators) => {
     },
   };
 
-  const proxy = new Proxy(object, handler);
-  return proxy
+    return new Proxy(object, handler); 
 };
 
 module.exports = {validate};

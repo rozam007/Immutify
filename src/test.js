@@ -19,4 +19,4 @@ const validators = {
 
 const proxy = validate(object, validators)
 
-console.log(proxy.age = 1000)
+console.log(proxy.age = 15)
