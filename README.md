@@ -1,15 +1,19 @@
 # Immutify
 
-Immutify is an open source javascript project aims to provide you easy to use api's to mutate your object with your customize validations
+Immutify is an open-source JavaScript project designed to provide an easy-to-use API for mutating objects with customizable validations.
 
 # How to run the project?
 
-### step 1
+### Step 1: Install Dependencies
+Use either npm or yarn to install the necessary dependencies:
+
 npm install 
 OR
 yarn install
 
-### step 2
+### Step 2: Start the Development Server
+Run the following command to start the development server:
+
 npm run dev
 OR
 yarn dev
