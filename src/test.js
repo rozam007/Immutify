@@ -1,6 +1,6 @@
-const { type } = require("./Helpers")
-const { validateMinMax } = require("./Utilities")
-const {validate} = require("./Validations/index")
+const { type } = require("./core/index")
+const { validateMinMax } = require("./Utilities/index")
+const {validate} = require("./core/Validator/ObjectValidator")
 
 const object = {
     id: 1,
