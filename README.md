@@ -26,13 +26,8 @@ Here's a step-by-step example of how to use Immutify to validate and mutate obje
 ### Step 1: Create an Object
 Define your JavaScript object:
 
-const object = {
-    id: 1,
-    name: 'rozam',
-    age: 24,
-    city: 'gujranwala',
-    married: false
-}
+![Project Logo](Assets/schema.png)
+
 
 ### Step 2: Import the type Function
 Import the type function from Immutify:
