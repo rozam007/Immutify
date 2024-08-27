@@ -25,6 +25,7 @@ Here's a step-by-step example of how to use Immutify to validate and mutate obje
 
 ### Step 1: Create an Object
 Define your JavaScript object:
+
 ![Schema](src/Assets/object.png)
 
 
@@ -33,6 +34,7 @@ Import the type function from Immutify:
 import { type } from 'immutify';
 
 Create a validation schema:
+
 ![Schema](src/Assets/schema.png)
 
 ### Step 3: Import the validate Function
