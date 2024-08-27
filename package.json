@@ -1,6 +1,6 @@
 {
   "name": "immutify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A library about to mutate the objects with custom validations.",
   "main": "index.js",
   "scripts": {
