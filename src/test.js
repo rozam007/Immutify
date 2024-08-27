@@ -1,4 +1,5 @@
 const { type } = require("./Helpers")
+const { validateMinMax } = require("./Utilities")
 const {validate} = require("./Validations/index")
 
 const object = {
@@ -12,11 +13,12 @@ const object = {
 const validators = {
     id: type(Number),
     name: type(String).length({min: 5, max:20}),
-    age: type(Number).range({min: 18, max: 85}),
+    age: type(Number).range({max: 85, min: 18}),
     city: type(String),
     married: type(Boolean)
 }
 
 const proxy = validate(object, validators)
 
-console.log(proxy.age = 15)
+console.log(proxy.age = 25)
+console.log(type(Number).range({min: 80, max: 40}))

@@ -1,3 +1,5 @@
+const { validateMinMax } = require("../Utilities");
+
 class Validator {
   constructor(constructor) {
     this.constructor = constructor;
@@ -19,6 +21,7 @@ class StringValidator extends Validator {
 
 class NumberValidator extends Validator {
   range({ min, max }) {
+    validateMinMax({min, max})
     return {
       validate: (value) =>
         typeof value === "number" && value >= min && value <= max,

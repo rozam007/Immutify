@@ -1,4 +1,4 @@
-const { matchObjectsKeys, generateErrorMessage } = require("../Utilities");
+const { matchObjectsKeys, generateErrorMessage, validateMinMax } = require("../Utilities");
 
 const validate =  (object, validators) => {
    matchObjectsKeys(object, validators);
