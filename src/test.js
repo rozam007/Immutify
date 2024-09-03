@@ -22,5 +22,6 @@ const validators = {
 const proxy = validate(object, validators)
 
 console.log(proxy.password = 'dsfss3d@')
+console.log(proxy.password = 'efr')
 // console.log(proxy.age = 25)
 // console.log(type(Number).range({min: 80, max: 40}))
